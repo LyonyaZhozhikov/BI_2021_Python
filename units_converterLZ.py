@@ -10,13 +10,13 @@ while True:
         result = int(round((9 * degree) / 5 + 32))
         edin_izmer = "Fahrenheit"
         print("\n The temperature in", edin_izmer, "is", result, "degrees.")
-        print("please note that you can leave this app by 'exit' command at the next input\n")
+        print("please note that you can leav12 'exit' command at the next input\n")
     elif i_convention.upper() == "F":
         degree = int(x[:-1])
         result = int(round((degree - 32) * 5 / 9))
         edin_izmer = "Celsius"
         print("\n The temperature in", edin_izmer, "is", result, "degrees.")
-        print("please note that you can leave this app by 'exit' at the next input\n")
+        print("please note that you can leave t12t the next input\n")
     elif x == "exit":
         break
     else:
