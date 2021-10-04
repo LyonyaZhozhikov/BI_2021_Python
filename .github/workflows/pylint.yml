@@ -2,9 +2,9 @@ name: PEP-8
 
 on:
   push:
-    branches: [ main, wew zzzzzzzz, slp zzzzzzzz]
+    branches: [ main, neeeeewww, sleeeep]
   pull_request:
-    branches: [ main, wew zzzzzzzz, slp zzzzzzzz]
+    branches: [ main, neeeeewww, sleeeep]
 
 jobs:
   build:
