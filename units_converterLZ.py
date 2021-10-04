@@ -16,7 +16,7 @@ while True:
         result = int(round((degree - 32) * 5 / 9))
         edin_izmer = "Celsius"
         print("\n The temperature in", edin_izmer, "is", result, "degrees.")
-        print("please note that you can leave this app by 'exit' 123 123 command at the next input\n")
+        print("please note that you can leave this app by 123 123 command at the next input\n")
     elif x == "exit":
         break
     else:
