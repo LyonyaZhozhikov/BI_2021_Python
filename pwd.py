@@ -9,7 +9,7 @@ import argparse
 import sys
 
 
-def run(args):
+def run():
     sys.stdout.write(os.getcwd())
 
 

@@ -17,7 +17,6 @@ def run(args):
         os.remove(args.filename)
 
 
-
 def main():
     parser = argparse.ArgumentParser(description="Deletes files or directories if specified")
     parser.add_argument('filename', help="command to delete tagged file",
