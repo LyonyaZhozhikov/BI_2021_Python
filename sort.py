@@ -4,7 +4,6 @@
 # 3. sort - sort words in file | -
 
 #
-
 import sys
 import argparse
 
