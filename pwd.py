@@ -14,7 +14,7 @@ def run(args):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Displays first 10 lines in files if not specified")
+    parser = argparse.ArgumentParser(description="Displays current working directory")
     parser.set_defaults(func=run)
     args = parser.parse_args()
     args.func(args)
