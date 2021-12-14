@@ -4,21 +4,30 @@ import pygame
 print("import pygame")
 import random
 print("import random")
+from pygame import mixer
 
 pygame.init()
 pygame.display.init()
+
+
+bg = pygame.image.load("logo-bi.png")
 print("pygame.init")
-win = pygame.display.set_mode((600, 600))
+
+mixer.music.load('bg.wav')
+mixer.music.play(-1)
+
+win = pygame.display.set_mode((660, 660))
 print("pygame.display.set_mode")
 pygame.display.set_caption("BI python carpet")
 print("display.set_caption")
-Triangle = [[400, 50], [100, 550], [500, 550]]
+Triangle = [[330, 165], [100, 550], [560, 550]]
 print("Triangle")
-x = random.randint(0, 600)
-y = random.randint(0, 600)
+x = random.randint(0, 660)
+y = random.randint(0, 660)
 print("random.randint(0, 600)")
 RUN = True
 while RUN:
+
     print("while True")
     for something_else_that_errors in pygame.event.get():
         print("pygame.event.get")
@@ -36,6 +45,7 @@ while RUN:
     print("draw.line")
     pygame.display.flip()
     print("display.update")
+    win.blit(bg, (0, 0))
 
 
 pygame.quit()
