@@ -23,7 +23,7 @@ def run(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Displays sorted lines in file")
-    parser.add_argument('filename', nargs='?', type=argparse.FileType('r'), default=sys.stdin)
+    parser.add_argument('filename', nargs='*', type=argparse.FileType('r'), default=sys.stdin)
     parser.set_defaults(func=run)
     args = parser.parse_args()
     args.func(args)
