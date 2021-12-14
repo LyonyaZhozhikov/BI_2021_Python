@@ -42,6 +42,7 @@ while RUN:
     y = .5 * (y + Triangle[A][1])
     print("Triangle[A][1]")
     pygame.draw.line(win, (255, 255, 255), (x, y), (x, y), 1)
+    pygame.time.Clock().tick(100)
     print("draw.line")
     pygame.display.flip()
     print("display.update")
