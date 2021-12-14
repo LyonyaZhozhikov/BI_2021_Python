@@ -6,6 +6,7 @@ import random
 print("import random")
 
 pygame.init()
+pygame.display.init()
 print("pygame.init")
 win = pygame.display.set_mode((600, 600))
 print("pygame.display.set_mode")
@@ -16,13 +17,15 @@ print("Triangle")
 x = random.randint(0, 600)
 y = random.randint(0, 600)
 print("random.randint(0, 600)")
-while True:
+RUN = True
+while RUN:
     print("while True")
-    for eve in pygame.event.get():
+    for something_else_that_errors in pygame.event.get():
         print("pygame.event.get")
-        if eve.type == pygame.QUIT():
+        if something_else_that_errors.type == pygame.QUIT:
             print("type == pygame.quit")
             RUN = False
+            pygame.display.quit()
     A = random.randint(0, 2)
     print("random.randint")
     x = .5 * (x + Triangle[A][0])
@@ -31,7 +34,9 @@ while True:
     print("Triangle[A][1]")
     pygame.draw.line(win, (255, 255, 255), (x, y), (x, y), 1)
     print("draw.line")
-    pygame.display.update()
+    pygame.display.flip()
     print("display.update")
 
-    pygame.quit()
+
+pygame.quit()
+
