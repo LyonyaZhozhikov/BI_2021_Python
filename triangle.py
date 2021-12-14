@@ -1,10 +1,12 @@
 # start
 
-import pygame
-print("import pygame")
 import random
-print("import random")
+import pygame
 from pygame import mixer
+print("import pygame")
+
+print("import random")
+
 
 pygame.init()
 pygame.display.init()
@@ -50,4 +52,3 @@ while RUN:
 
 
 pygame.quit()
-

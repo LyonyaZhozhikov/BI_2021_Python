@@ -1,11 +1,11 @@
 # start
 
 import pygame
-
+from pygame import mixer
 print("import pygame")
 
 print("import random")
-from pygame import mixer
+
 
 pygame.init()
 pygame.display.init()
