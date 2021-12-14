@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # start
-# 3. sort - sort words in file | -
+# 3. sort - sort lines in file | -
 
 #
 import sys
