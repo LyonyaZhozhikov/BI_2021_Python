@@ -29,7 +29,6 @@ y = random.randint(0, 660)
 print("random.randint(0, 600)")
 RUN = True
 while RUN:
-
     print("while True")
     for something_else_that_errors in pygame.event.get():
         print("pygame.event.get")
@@ -49,6 +48,4 @@ while RUN:
     pygame.display.flip()
     print("display.update")
     win.blit(bg, (0, 0))
-
-
 pygame.quit()
