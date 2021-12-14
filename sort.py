@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # start
-# 3. sort - sort words in file | -
+# 3. sort - sort lines in file | -
 
 #
 import sys
@@ -23,7 +23,7 @@ def run(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Displays sorted lines in file")
-    parser.add_argument('filename', nargs='?', type=argparse.FileType('r'), default=sys.stdin)
+    parser.add_argument('filename', nargs='*', type=argparse.FileType('r'), default=sys.stdin)
     parser.set_defaults(func=run)
     args = parser.parse_args()
     args.func(args)
