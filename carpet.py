@@ -3,7 +3,6 @@
 import pygame
 
 print("import pygame")
-import random
 
 print("import random")
 from pygame import mixer
