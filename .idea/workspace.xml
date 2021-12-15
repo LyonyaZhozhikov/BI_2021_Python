@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22488b2e-c90a-49f0-a2ed-2509d9e149ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/random_walk.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random_walk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ftps.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/references.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex-1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="22EfjbFYT3bfhViGCDwzKjb0ZXe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,9 +39,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/wc.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/parser5.py" />
   </component>
-  <component name="RunManager" selected="Python.random_walk">
+  <component name="RunManager" selected="Python.regex-1">
     <configuration name="carpet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BI_2021_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="regex-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BI_2021_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +96,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regex-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regex-1" />
         <item itemvalue="Python.random_walk" />
         <item itemvalue="Python.triangle (1)" />
         <item itemvalue="Python.carpet" />
         <item itemvalue="Python.triangle" />
-        <item itemvalue="Python.rm" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +178,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
