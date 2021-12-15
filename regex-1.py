@@ -6,7 +6,7 @@ matches = []
 
 with open("references.txt") as input_file:
     for line in input_file:
-        match = re.findall('(ftp(\.[a-zA-Z]{2,3}){4}(\/[a-zA-Z0-9_#]+)+(\.[a-z0-9]+)+)', line)
+        match = re.findall(r'(ftp(\.[a-zA-Z]{2,3}){4}(/[a-zA-Z0-9_#]+)+(\.[a-z0-9]+)+)', line)
         matches.append(match)
 
 with open("ftps.txt", "w") as output_file:
