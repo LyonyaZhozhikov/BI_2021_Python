@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22488b2e-c90a-49f0-a2ed-2509d9e149ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/regex-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regex-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tale.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tale_a_letter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tale_only_digits.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex-5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tale_exclamation_point.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ftps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regex-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/regex-1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/parser5.py" />
   </component>
-  <component name="RunManager" selected="Python.regex-1">
-    <configuration name="random_walk" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BI_2021_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_walk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.regex-5">
     <configuration name="regex-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BI_2021_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="triangle (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="regex-4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BI_2021_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +117,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/triangle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regex-4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regex-5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BI_2021_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regex-5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regex-5" />
+        <item itemvalue="Python.regex-4" />
         <item itemvalue="Python.regex-1" />
         <item itemvalue="Python.regex-2" />
         <item itemvalue="Python.regex-3" />
-        <item itemvalue="Python.random_walk" />
-        <item itemvalue="Python.triangle (1)" />
       </list>
     </recent_temporary>
   </component>
