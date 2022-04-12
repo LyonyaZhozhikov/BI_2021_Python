@@ -25,22 +25,22 @@ Hinata2 = Rank("passed on second try", 2)
 
 
 # var3 crafted dataclass
-def data_class_master(c_class):
-    def inner_master(*args, **kwar):
-        c_class.__annotations__
-        return
+# def data_class_master(c_class):
+#     def inner_master(*args, **kwar):
+#         c_class.__annotations__
+#         return
+#
+#     return inner_master
 
-    return inner_master
 
-
-@data_class_master
+# @data_class_master
 class Battles:
     third_shinoby_war: str
     fourth_shinoby_war: str
     total_battles: int
 
 
-Hinata3 = Battles("Not attended", "Attended", 3)
+# Hinata3 = Battles("Not attended", "Attended", 3)
 
 if __name__ == "__main__":
     print("\nvar1 - classic")
@@ -50,5 +50,5 @@ if __name__ == "__main__":
     print(Hinata2)
     print(Hinata2.class_B_missions)
     print("\nvar3 - crafted")
-    print(Hinata3)
-    print(Hinata3.fourth_shinoby_war)
+    # print(Hinata3)
+    # print(Hinata3.fourth_shinoby_war)
