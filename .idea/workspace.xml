@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22488b2e-c90a-49f0-a2ed-2509d9e149ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-1-timer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-2-logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-3-spears.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-4-static.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-5-class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-5-class.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-5-class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +207,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hw-folder/HW-decorators/HW-decorators-5-class.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
