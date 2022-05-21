@@ -1,10 +1,6 @@
 # 4
 
-import numpy as np
-import pandas as pd
-import matplotlib
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 file_gff = 'rrna_annotation.gff'
 def read_gff(file):
@@ -36,42 +32,32 @@ def RNA_counter(file):
 RNA_counter(file_gff)
 
 plt.rcParams['figure.figsize'] = 25, 15
-RNA_counter(file_gff).unstack().plot.barh();
+RNA_counter(file_gff).unstack().plot.barh()
 
 df_gff = read_gff_modified(file_gff)
-df_gff
 
 df_bed = read_bed6(file_bed)
-df_bed
 
 merged = df_gff.merge(df_bed, on=['chromosome'], suffixes=('_gff', '_bed'))
-merged
 
 merged_modified = merged.query('(start_gff-1) >= start_bed and (end_gff-1) < end_bed')
 
-merged_modified
-
 # 3
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set();
+sns.set()
 
 df = pd.read_csv('cardio_train.csv', sep=';')
 df.set_index('id', inplace=True)
 
 df.head()
 
-df.head().T
-
 # some info
 df.info()
 
 # some statistics
-df.describe().T
-
 # how many of them have heart disease
 df['cardio'].value_counts()
 
@@ -79,10 +65,10 @@ df['cardio'].value_counts()
 df['cardio'].value_counts(normalize=True) * 100
 
 # normal distribution found
-df['height'].hist(bins=40);
+df['height'].hist(bins=40)
 
 # увидим 'выбросы' на этом графике
-sns.boxplot(x=df['height']);
+sns.boxplot(x=df['height'])
 
 # преобразуем возраст - дни в количество лет
 df['age'] = (df['age'] / 365).round()
@@ -91,15 +77,15 @@ df.head()
 # узнаем средний возраст больных и здоровых по ССЗ
 df.groupby('cardio')['age'].mean()
 
-df.groupby('cardio')['age'].mean().plot.bar(rot=0,xlabel='heart broken)', ylabel='Age');
+df.groupby('cardio')['age'].mean().plot.bar(rot=0,xlabel='heart broken)', ylabel='Age')
 
 # distribution of sick and healthy peaple by age
 plt.figure(figsize=(25, 10)) # starting from 55 age sick people are prevalent
-sns.countplot(y='age', hue='cardio', data=df);
+sns.countplot(y='age', hue='cardio', data=df)
 
-plt.scatter(df['age'], df['height']);
+plt.scatter(df['age'], df['height'])
 
-sns.jointplot(x='height', y='weight', data=df);
+sns.jointplot(x='height', y='weight', data=df)
 # похоже есть аномалии в данных, либо исследования проводились у людей с низкорослостью
 
 df.pivot_table(values=['age', 'cardio'], index=['smoke', 'alco'], aggfunc='mean')
@@ -110,13 +96,13 @@ pd.crosstab(df['smoke'], df['alco'])
 # но на кросстаблице видно что подавляющее большинство респондентов непьющие и некурящие, скорее всего сказки выше стоит забыть
 
 h = df['height'] # looks like data in cm
-h
+
 
 h_meters = h / 100 # cm > m
-h_meters[:10] # now it can fit for further BMI index calculations
+ # now it can fit for further BMI index calculations
 
 # вот столько пацеинтов с низкорослостью нашлось, почти столько же сколько в выборке моей кандидатской)
-h[h < 125].shape[0]
+
 
 # средний возраст курящих
 df[df['smoke'] == 1]['age'].mean()
@@ -127,7 +113,7 @@ df[(df['smoke'] == 1) & (df['cardio'] == 1)]['age'].mean()
 # удалим всех с аномальным ростом
 dummy_df = df.drop(df[(df['height'] < 125) | (df['height'] > 200)].index)
 # посмотрим сколько они занимали места в выборке
-dummy_df.shape[0] / df.shape[0]
+
 
 df = df.drop(df[(df['height'] < 125) | (df['height'] > 200)].index)
 
@@ -162,17 +148,17 @@ NEW_gender = {1:'Female', 2:'Male'}
 df['NEW_gender'] = df['gender'].map(NEW_gender)
 df = df.drop('gender', axis=1)
 
-df
+
 
 df['BMI'] = df['weight']/df['height_m']**2
 
 # вроде бы все
-df
+
 
 # PS: still some strange things remaining :(
-sns.jointplot(x='BMI', y='weight', data=df);
+sns.jointplot(x='BMI', y='weight', data=df)
 
-sns.jointplot(x='BMI', y='height_m', data=df);
+sns.jointplot(x='BMI', y='height_m', data=df)
 
 # as can be seen anomalies are low height and high weight
 
@@ -183,27 +169,26 @@ df.query('matches > matches.mean()')
 
 df_selected = df.query('matches > matches.mean()').loc[: ,['pos', 'reads_all', 'mismatches', 'deletions', 'insertions']].set_index('pos')
 
-df_selected
 
 # 1
 
 df = pd.read_csv('https://raw.githubusercontent.com/Serfentum/bf_course/master/14.pandas/train.csv')
-df.loc[:,"A":"G"]
+
 df.set_index('pos', inplace=True)
 
 plt.rcParams['figure.figsize'] = 10, 5
-df.loc[:,"A":"G"].sum().plot.bar(ylabel='Total reads number', xlabel='Nucleotide', rot=0);
+df.loc[:,"A":"G"].sum().plot.bar(ylabel='Total reads number', xlabel='Nucleotide', rot=0)
 
 plt.rcParams['figure.figsize'] = 10, 5
-df.loc[:,"A":"G"].plot.bar(stacked=True, ylabel='Number of reads', xlabel='Number of position');
+df.loc[:,"A":"G"].plot.bar(stacked=True, ylabel='Number of reads', xlabel='Number of position')
 
 cutting_reads_num=6
 
 plt.rcParams['figure.figsize'] = 25, 10
-df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(stacked=True, ylabel='Number of reads', xlabel='Number of position',rot = 0);
+df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(stacked=True, ylabel='Number of reads', xlabel='Number of position',rot = 0)
 # plt.savefig('HW-pandas-1-1.png')
 
 plt.rcParams['figure.figsize'] = 25, 10
-df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(subplots=True, ylabel='Number of reads', xlabel='Number of position',rot = 0);
+df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(subplots=True, ylabel='Number of reads', xlabel='Number of position',rot = 0)
 # plt.savefig('HW-pandas-1-2.png')
 
