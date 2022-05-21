@@ -107,7 +107,8 @@
 # # наоборот среди курящих и пьющих ССЗ встречается реже) но только если курить, у некурящих пьющих всё плохо
 #
 # pd.crosstab(df['smoke'], df['alco'])
-# # но на кросстаблице видно что подавляющее большинство респондентов непьющие и некурящие, скорее всего сказки выше стоит забыть
+# # но на кросстаблице видно что подавляющее большинство респондентов непьющие и некурящие, скорее всего сказки выше
+# стоит забыть
 #
 # h = df['height'] # looks like data in cm
 # h
@@ -181,7 +182,8 @@
 # df = pd.read_csv('https://raw.githubusercontent.com/Serfentum/bf_course/master/14.pandas/train.csv')
 # df.query('matches > matches.mean()')
 #
-# df_selected = df.query('matches > matches.mean()').loc[: ,['pos', 'reads_all', 'mismatches', 'deletions', 'insertions']].set_index('pos')
+# df_selected = df.query('matches > matches.mean()').loc[: ,['pos', 'reads_all', 'mismatches', 'deletions',
+# 'insertions']].set_index('pos')
 #
 # df_selected
 #
@@ -200,10 +202,12 @@
 # cutting_reads_num=6
 #
 # plt.rcParams['figure.figsize'] = 25, 10
-# df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(stacked=True, ylabel='Number of reads', xlabel='Number of position',rot = 0);
+# df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(stacked=True, ylabel='Number of reads',
+# xlabel='Number of position',rot = 0);
 # # plt.savefig('HW-pandas-1-1.png')
 #
 # plt.rcParams['figure.figsize'] = 25, 10
-# df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(subplots=True, ylabel='Number of reads', xlabel='Number of position',rot = 0);
+# df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(subplots=True, ylabel='Number of reads',
+# xlabel='Number of position',rot = 0);
 # # plt.savefig('HW-pandas-1-2.png')
 #
