@@ -191,4 +191,3 @@ df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(stacked=Tr
 plt.rcParams['figure.figsize'] = 25, 10
 df.loc[:,"A":"G"].iloc[cutting_reads_num:-cutting_reads_num].plot.bar(subplots=True, ylabel='Number of reads', xlabel='Number of position',rot = 0)
 # plt.savefig('HW-pandas-1-2.png')
-
